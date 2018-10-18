@@ -1,0 +1,27 @@
+{
+  "name": "orbitaljs",
+  "version": "0.1.0",
+  "description": "Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers and users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schahriar/orbital.git"
+  },
+  "keywords": [
+    "http2",
+    "frontend",
+    "build",
+    "bundle",
+    "container",
+    "orbital"
+  ],
+  "author": "Schahriar SaffarShargh <info@schahriar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schahriar/orbital/issues"
+  },
+  "homepage": "https://github.com/schahriar/orbital#readme"
+}
