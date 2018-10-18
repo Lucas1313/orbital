@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/schahriar/orbital/issues"
   },
-  "homepage": "https://github.com/schahriar/orbital#readme"
+  "homepage": "https://github.com/schahriar/orbital#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "ava": "^0.25.0",
+    "nyc": "^13.1.0",
+    "rollup": "^0.66.6"
+  }
 }
