@@ -1,7 +1,7 @@
 orbital - [![Build Status](https://travis-ci.org/schahriar/orbital.svg?branch=master)](https://travis-ci.org/schahriar/orbital)
 ---
 
-Frontend container, HTTP/2-based, no-bundle, for your application needs
+Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers and users.
 
 ---
 
