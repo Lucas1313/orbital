@@ -2,5 +2,10 @@ language: node_js
 node_js:
   - "10"
 
-script:
-    - echo "Hello World!"
+jobs:
+  include:
+      - stage: build
+        script: npm run build
+
+      - stage: measure
+        script: python node_modules/travis-weigh-in/weigh_in.py dist/orbital.min.js
