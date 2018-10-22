@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config && terser dist/orbital.js > dist/orbital.min.js && npm run measure",
-    "measure": "cat dist/orbital.min.js | gzip -9f > dist/orbital.min.gzip.js && wc -c dist/*.js"
+    "measure": "cat dist/orbital.min.js | gzip -9f > dist/orbital.min.gzip.js && wc -c dist/*.js",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "repository": {
     "type": "git",
@@ -31,12 +32,12 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "ava": "^0.25.0",
+    "jsdoc": "^3.5.5",
     "nyc": "^13.1.0",
     "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.4.0",
     "terser": "^3.10.1",
     "travis-weigh-in": "^1.0.2"
-  },
-  "dependencies": {}
+  }
 }
