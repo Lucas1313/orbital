@@ -1,3 +1,4 @@
+/** global window */
 import scriptLoader from './loaders/script';
 
 /**
@@ -7,7 +8,7 @@ import scriptLoader from './loaders/script';
  */
 const orbital = {
   loaders: new Map([
-    ['application/javascript', scriptLoader]
+    ['application/javascript', scriptLoader],
   ]),
   /**
    * @param {string} contentType - Content Type based on https://www.ietf.org/rfc/rfc4329.txt
@@ -18,7 +19,7 @@ const orbital = {
     orbital.loaders.set(contentType, handle);
   },
 
-  import: (path) => {
+  import: () => {
     /** @todo: Module definition */
     /** @todo: Fetch request and fallbacks */
     /** @todo: Content Type detection */
