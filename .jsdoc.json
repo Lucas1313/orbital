@@ -16,5 +16,12 @@
     "default": {
       "outputSourceFiles": true
     }
+  },
+  "opts": {
+    "template": "templates/default",  // same as -t templates/default
+    "encoding": "utf8",               // same as -e utf8
+    "destination": "./documentation/",          // same as -d ./out/
+    "recurse": true,                  // same as -r
+    "tutorials": "documentation/tutorials"// same as -u path/to/tutorials
   }
 }
