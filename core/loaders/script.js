@@ -23,24 +23,25 @@ if (typeof window !== 'undefined') {
   });
 }
 
-export default url => (new Promise((resolve, reject) => {
-  const script = document.createElement('script');
-  script.charset = 'utf-8';
-  script.async = true;
-  script.crossOrigin = 'anonymous';
+export default url => (
+  new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.charset = 'utf-8';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
 
-  script.addEventListener('error', reject);
-  script.addEventListener('load', () => {
-    document.head.removeChild(script);
-    // Note URL normalization issues are going to be a careful concern here
-    if (globalError) {
-      return reject(globalError);
-    }
-    resolve();
+    script.addEventListener('error', reject);
+    script.addEventListener('load', () => {
+      document.head.removeChild(script);
+      // Note URL normalization issues are going to be a careful concern here
+      if (globalError) {
+        return reject(globalError);
+      }
+      resolve();
 
-    return null;
-  });
-  script.src = url;
-  document.head.appendChild(script);
-})
+      return null;
+    });
+    script.src = url;
+    document.head.appendChild(script);
+  })
 );
