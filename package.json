@@ -2,7 +2,7 @@
   "name": "orbitaljs",
   "version": "0.1.0",
   "description": "Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers and users",
-  "main": "index.js",
+  "main": "core/orbital.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config && terser dist/orbital.js > dist/orbital.min.js && npm run measure",
