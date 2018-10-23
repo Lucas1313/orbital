@@ -1,4 +1,4 @@
-import './loaders/script';
+import scriptLoader from './loaders/script';
 
 /**
  * Orbital global definition
@@ -6,7 +6,9 @@ import './loaders/script';
  * @namespace orbital
  */
 const orbital = {
-  loaders: new Map(),
+  loaders: new Map([
+    ['application/javascript', scriptLoader]
+  ]),
   /**
    * @param {string} contentType - Content Type based on https://www.ietf.org/rfc/rfc4329.txt
    * @param {function} handle - Loader function that registers module to orbital
@@ -20,7 +22,7 @@ const orbital = {
     /** @todo: Module definition */
     /** @todo: Fetch request and fallbacks */
     /** @todo: Content Type detection */
-  }
+  },
 };
 
 window.orbital = orbital;
