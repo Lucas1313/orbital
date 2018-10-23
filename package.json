@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config && terser dist/orbital.js > dist/orbital.min.js && npm run measure",
     "measure": "cat dist/orbital.min.js | gzip -9f > dist/orbital.min.gzip.js && wc -c dist/*.js",
-    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose -r"
   },
   "repository": {
     "type": "git",
