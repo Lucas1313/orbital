@@ -40,10 +40,9 @@
     "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.4.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
     "terser": "^3.10.1",
     "travis-weigh-in": "^1.0.2"
   },
-  "dependencies": {
-    "selenium-webdriver": "^4.0.0-alpha.1"
-  }
+  "dependencies": {}
 }
