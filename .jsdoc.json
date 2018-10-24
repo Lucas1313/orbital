@@ -11,7 +11,7 @@
   "plugins": [],
   "recurseDepth": 10,
   "templates": {
-    "cleverLinks": false,
+    "cleverLinks": true,
     "monospaceLinks": false,
     "default": {
       "outputSourceFiles": true
