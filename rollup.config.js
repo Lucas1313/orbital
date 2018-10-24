@@ -2,15 +2,15 @@ import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
 export default {
-  input: 'lib/orbital.js',
+  input: 'core/orbital.js',
   output: {
     file: 'dist/orbital.js',
-    format: 'iife'
+    format: 'iife',
   },
   plugins: [
     resolve(),
     babel({
-      exclude: 'node_modules/**'
-    })
-  ]
+      exclude: 'node_modules/**',
+    }),
+  ],
 };

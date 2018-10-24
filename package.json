@@ -2,9 +2,9 @@
   "name": "orbitaljs",
   "version": "0.1.0",
   "description": "Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers and users",
-  "main": "index.js",
+  "main": "core/orbital.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && ava test/*.js",
     "build": "rollup --config && terser dist/orbital.js > dist/orbital.min.js && npm run measure",
     "measure": "cat dist/orbital.min.js | gzip -9f > dist/orbital.min.gzip.js && wc -c dist/*.js"
   },
@@ -34,10 +34,13 @@
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "fs-extra": "^7.0.0",
+    "handlebars": "^4.0.12",
     "nyc": "^13.1.0",
     "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.4.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
     "terser": "^3.10.1",
     "travis-weigh-in": "^1.0.2"
   },

@@ -1,4 +1,4 @@
-orbital - [![Build Status](https://travis-ci.org/schahriar/orbital.svg?branch=master)](https://travis-ci.org/schahriar/orbital)
+orbital - [![Build Status](https://travis-ci.org/schahriar/orbital.svg?branch=master)](https://travis-ci.org/schahriar/orbital) [![Maintainability](https://api.codeclimate.com/v1/badges/9ac444691bab73485ff0/maintainability)](https://codeclimate.com/github/schahriar/orbital/maintainability)
 ---
 
 Progressive Frontend containers, designed for HTTP/2, distributed bundling, and for your users and developers.
