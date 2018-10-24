@@ -1,7 +1,14 @@
-orbital - [![Build Status](https://travis-ci.org/schahriar/orbital.svg?branch=master)](https://travis-ci.org/schahriar/orbital)
+orbital - [![Build Status](https://travis-ci.org/schahriar/orbital.svg?branch=master)](https://travis-ci.org/schahriar/orbital) [![Maintainability](https://api.codeclimate.com/v1/badges/9ac444691bab73485ff0/maintainability)](https://codeclimate.com/github/schahriar/orbital/maintainability)
 ---
 
-Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers and users.
+Progressive Frontend containers, designed for HTTP/2, distributed bundling, and for your users and developers.
+===
+
+## Features
+- Each package is self-deployable, no shared knowledge of other packages dependencies during builds
+- Dependencies are shared during runtime, Orbital optimizes each load towards the best possible scenario for the given user
+- Packages are loaded and mounted based on priority
+
 
 ---
 
@@ -9,3 +16,6 @@ Progressive Frontend containers, HTTP/2-based, no-bundle, for your developers an
 #### [Join the conversation on Slack](https://join.slack.com/t/orbital-js/shared_invite/enQtNDU4MTY3Njk2NjczLTAyNGM5MTgyMGE3NmVmZTBhMjA0Yjg1ZTE0M2NhNjBhM2VkMGUzYjNmZDViODg0YjFhMjRlZmRlYjJmN2M4YjM)
 
 #### [Collaborate on Product Roadmap](https://trello.com/b/3W2ygx0c/roadmap)
+
+### License
+Who doesn't love [MIT!](https://raw.githubusercontent.com/schahriar/orbital/master/LICENSE)
